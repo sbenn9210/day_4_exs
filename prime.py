@@ -1,3 +1,11 @@
 user_input = int(input("Enter a number: "))
 
-if user_input > 1:
+a = 2
+
+while user_input > a:
+    if user_input % a == 0 and a != user_input:
+        print("You did not enter a prime number")
+        break
+    a += 1
+else:
+    print("You entered a prime number")
